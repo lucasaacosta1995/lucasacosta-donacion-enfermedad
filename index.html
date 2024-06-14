@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda para Lucas Acosta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .zoom {
+            transition: transform .2s;
+        }
+        .zoom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h1>Ayuda para Lucas Acosta</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>Hola, mi nombre es Lucas Acosta, tengo 29 años y soy de Buenos Aires, Argentina. Me diagnosticaron leucemia linfoblastica aguda y estoy pasando por un momento muy difícil.</p>
+                        <p>Por problemas con mi prepaga OMINT, que ya están en manos de abogados y amparos (Total de gastos para amparos y mediaciones son de ARS $1.350.000).</p>
+                        <p>Por lo cual debo necesito recaudar 5 mil dólares para la primera parte de mi tratamiento, ya que el costo de mis medicamento para todo el tratamiento es mayor de 15 millones de pesos.</p>
+                        <p>Agradezco cualquier ayuda que puedas brindarme. A continuación, puedes ver las imágenes de mi diagnóstico y hacer una donación a través de los siguientes medios:</p>
+                        
+
+                        <div class="row mb-4">
+                            <p><strong>Mis medicamentos necesarios para comenzar:</strong></p>
+                            <div class="col-md-6 mb-3">
+                                <a href="img/medicamentos.jpeg" target="_blank" download="medicamentos.jpeg">
+                                    <img src="img/medicamentos.jpeg" class="img-fluid zoom" alt="Diagnóstico 1">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p><strong>Diagnósticos</strong>:</p>
+
+                            <div class="col-md-6 mb-3">
+                                <a href="img/1.jpeg" target="_blank" download="Diagnóstico1.jpeg">
+                                    <img src="img/1.jpeg" class="img-fluid zoom" alt="Diagnóstico 1">
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="img/2.jpeg" target="_blank" download="Diagnóstico2.jpeg">
+                                    <img src="img/2.jpeg" class="img-fluid zoom" alt="Diagnóstico 2">
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="img/3.jpeg" target="_blank" download="Diagnóstico3.jpeg">
+                                    <img src="img/3.jpeg" class="img-fluid zoom" alt="Diagnóstico 3">
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="img/4.jpeg" target="_blank" download="Diagnóstico4.jpeg">
+                                    <img src="img/4.jpeg" class="img-fluid zoom" alt="Diagnóstico 4">
+                                </a>
+                            </div>
+                        </div>
+
+                    
+                        
+                       
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Datos para donaciones vía cuenta bancaria (Santander)</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Cuenta:</strong> 009-378136/6</p>
+                                <p class="mb-0"><strong>Alias:</strong> <span id="alias">ACOSTA.A.LUCAS95</span></p>
+                                <button onclick="copyToClipboard('alias')">Copiar Alias</button>
+                                
+                                <p class="mb-0 mt-4"><strong>CBU:</strong> <span id="cbu">0720009088000037813668</span></p>
+                                <button onclick="copyToClipboard('cbu')">Copiar CBU</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <p>Mi numero de contacto 1137664819 - Lucas Aldo Acosta</p>
+                        <p>Muchas gracias por tu apoyo y solidaridad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function copyToClipboard(elementId) {
+            var textToCopy = document.getElementById(elementId).textContent;
+            var tempInput = document.createElement("input");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+    </script>
+</body>
+</html>
